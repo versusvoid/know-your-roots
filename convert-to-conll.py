@@ -7,10 +7,11 @@ def transform(f, of):
         line = line.strip().split()
         for part in line:
             part_type, part = part.split('_')
-            # WTF? Why we have to have such check at all?
+            # Why we have to have such check at all?
             if part == '': continue
 
-            for letter in part:
+            print(part[0], ' ', part_type, '_начало', sep='', file=of)
+            for letter in part[1:]:
                 print(letter, part_type, file=of)
 
         print(file=of)
