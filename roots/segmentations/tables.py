@@ -54,7 +54,7 @@ def _load_set(set, set_file, replace=False):
 
             set.add(l)
 
-def _load_sets(inflexions_file="inflexions", suffixies_file="suffixies"):
+def _load_sets(inflexions_file="data/inflexions", suffixies_file="data/suffixies"):
     """
     Загружает `_suffixies' и `_inflexions`.
 

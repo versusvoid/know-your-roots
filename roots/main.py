@@ -17,8 +17,8 @@ if __name__ == '__main__':
     parser.add_argument('-A', '--address', type=str, default='ru.wiktionary.org', help='address of mediawiki with ruwiktionary data (%(default)s).\nRequired if no tables were previously extracted')
     parser.add_argument('-T', '--tables-directory', type=str, default='tables', help='directory to load from or put extracted tables into if not already extracted (%(default)s)')
     parser.add_argument('-M', '--meta-segmentations', type=argparse.FileType('r'), help='file with meta-segmentations (defaults to %(default)s meaning extract them on the go)')
-    parser.add_argument('-I', '--inflexions', type=argparse.FileType('r'), default='inflexions', help='file with possible inflexions list (%(default)s)')
-    parser.add_argument('-S', '--suffixies', type=argparse.FileType('r'), default='suffixies', help='file with possible suffixies list (%(default)s)')
+    parser.add_argument('-I', '--inflexions', type=argparse.FileType('r'), default='data/inflexions', help='file with possible inflexions list (%(default)s)')
+    parser.add_argument('-S', '--suffixies', type=argparse.FileType('r'), default='data/suffixies', help='file with possible suffixies list (%(default)s)')
     parser.add_argument('--debug', action='store_true', default=False, help='enable debug mode')
 
 

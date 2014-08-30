@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
 
+# Конвертурует вывод данной программы в типичный CoNLL 
+# формат с двумя столбцами - буквой и частью слова
+
+# Converts segmentations from main programm format to
+# standart CoNLL with two columns - letter and part type
+
 import sys
 
 def transform(f, of):
